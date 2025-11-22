@@ -1,253 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amier Network Security | CCNA • CCNP • MCSA Expert</title>
-    <meta name="description" content="Amier Network Security - Certified professional in CCNA, CCNP, and MCSA. Specialized in network security, infrastructure design, and Microsoft solutions.">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Amier | Network Security Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
     <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --gray: #64748b;
-            --success: #10b981;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f1e;
+            color: #e0e0e0;
+            line-height: 1.7;
         }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header & Hero */
-        .hero {
-            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
-            color: white;
-            padding: 100px 0;
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             text-align: center;
+            padding: 120px 20px;
         }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 16px;
+        header h1 {
+            font-size: 4rem;
             font-weight: 700;
+            margin-bottom: 10px;
         }
-        
-        .hero .subtitle {
-            font-size: 1.4rem;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
-        
-        .certifications {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-        
-        .cert-badge {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 20px 40px;
-            border-radius: 16px;
+        header p {
             font-size: 1.5rem;
-            font-weight: 600;
-            min-width: 180px;
-            transition: all 0.3s ease;
+            opacity: 0.95;
         }
-        
-        .cert-badge:hover {
-            transform: translateY(-8px);
-            background: rgba(37,99,235,0.3);
-            box-shadow: 0 20px 40px rgba(37,99,235,0.2);
-        }
-        
-        /* Services Section */
-        .services {
-            padding: 100px 0;
-            background: white;
-        }
-        
-        section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: var(--dark);
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-        }
-        
-        .card i {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 16px;
-            color: var(--dark);
-        }
-        
-        /* About & Contact */
-        .about-contact {
-            padding: 100px 0;
-            background: #f1f5f9;
-        }
-        
-        .about-text {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 50px;
-            text-align: center;
-            color: var(--gray);
-        }
-        
-        .contact-btn {
-            display: block;
-            width: fit-content;
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
-            background: var(--primary);
-            color: white;
-            padding: 16px 40px;
-            border-radius: 50px;
+            padding: 50px 20px;
+        }
+        section {
+            margin-bottom: 90px;
+        }
+        h2 {
+            font-size: 2.4rem;
+            color: #00d4ff;
+            margin-bottom: 35px;
+            text-align: center;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #00d4ff;
+            display: block;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        .about, .certifications, .skills, .contact {
+            background: #1a1a2e;
+            padding: 45px;
+            border-radius: 18px;
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.15);
+        }
+        .about p {
+            font-size: 1.15rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .certifications ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        .certifications li {
+            background: #16213e;
+            padding: 25px 40px;
+            border-radius: 12px;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #00d4ff;
+            border: 2px solid #00d4ff;
+            min-width: 260px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        .certifications li:hover {
+            transform: translateY(-12px);
+            background: #00d4ff;
+            color: #0f0f1e;
+            box-shadow: 0 15px 30px rgba(0, 212, 255, 0.4);
+        }
+        .cert-badge {
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            list-style: none;
+        }
+        .skills li {
+            background: #16213e;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .skills li:hover {
+            background: #00d4ff;
+            color: #0f0f1e;
+            transform: scale(1.05);
+        }
+        .contact p {
+            font-size: 1.25rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact a {
+            color: #00d4ff;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
-        
-        .contact-btn:hover {
-            background: #1d4ed8;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(37,99,235,0.3);
+        .contact a:hover {
+            color: #00ffcc;
         }
-        
-        /* Footer */
         footer {
-            background: var(--dark);
-            color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 40px;
+            background: #0d0d1a;
+            font-size: 1rem;
+            color: #888;
         }
-        
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.8rem; }
-            .hero .subtitle { font-size: 1.2rem; }
-            .certifications { gap: 20px; }
-            .cert-badge { padding: 16px 30px; font-size: 1.3rem; }
+            header h1 { font-size: 2.8rem; }
+            header p { font-size: 1.3rem; }
+            .certifications li { min-width: 200px; font-size: 1.2rem; padding: 20px; }
+            .about, .certifications, .skills, .contact { padding: 30px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Amier Network Security</h1>
-            <p class="subtitle">Certified Network & Security Professional</p>
-            
-            <div class="certifications">
-                <div class="cert-badge">
-                    <i class="fas fa-certificate"></i><br>CCNA
-                </div>
-                <div class="cert-badge">
-                    <i class="fas fa-certificate"></i><br>CCNP
-                </div>
-                <div class="cert-badge">
-                    <i class="fas fa-certificate"></i><br>MCSA
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Header -->
+    <header>
+        <h1>Amier</h1>
+        <p>Network Security Specialist</p>
+        <p style="font-size:1.3rem; margin-top:10px; opacity:0.9;">CCNA • CCNP Security (SCOR 350-701) • MCSA</p>
+    </header>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2>Expertise & Services</h2>
-            <div class="grid">
-                <div class="card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Network Security</h3>
-                    <p>Firewall configuration (Cisco ASA, Palo Alto), VPN setup, intrusion detection/prevention systems, and security audits.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Enterprise Networking</h3>
-                    <p>Design and implementation of scalable LAN/WAN solutions, routing protocols (OSPF, BGP, EIGRP), and switching technologies.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-server"></i>
-                    <h3>Microsoft Infrastructure</h3>
-                    <p>Active Directory, Windows Server management, Group Policy, Azure AD, and hybrid cloud solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
 
-    <!-- About & Contact -->
-    <section class="about-contact">
-        <div class="container">
-            <h2>About Amier</h2>
-            <p class="about-text">
-                With over 8 years of hands-on experience in networking and cybersecurity, I hold industry-recognized certifications including 
-                <strong>Cisco CCNA</strong>, <strong>CCNP Enterprise</strong>, and <strong>Microsoft MCSA</strong>. 
-                I specialize in designing secure, high-performance network infrastructures for enterprises of all sizes.
+        <!-- About -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Amier — a passionate and dedicated network security professional with strong foundations in Cisco and Microsoft technologies. 
+                I hold the <strong>Cisco CCNP Security (SCOR 350-701)</strong> certification, specializing in implementing and operating Cisco security core technologies. 
+                I’m committed to protecting networks, detecting threats, and building secure infrastructures. 
+                Always learning, always improving — on my way to becoming a cybersecurity expert.
             </p>
-            
-            <a href="mailto:amier@networksecurity.pro" class="contact-btn">
-                <i class="fas fa-envelope"></i> Get In Touch
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- Certifications -->
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>
+                    Cisco CCNA<br>
+                    <span class="cert-badge">Routing & Switching</span>
+                </li>
+                <li>
+                    CCNP Security<br>
+                    <span class="cert-badge">SCOR 350-701 Certified</span>
+                </li>
+                <li>
+                    Microsoft MCSA<br>
+                    <span class="cert-badge">Windows Server 2016/2019</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2>Core Skills & Technologies</h2>
+            <ul>
+                <li>Cisco Security Technologies (Firepower, ISE, Stealthwatch)</li>
+                <li>Next-Generation Firewall & IPS</li>
+                <li>VPN (Site-to-Site & Remote Access)</li>
+                <li>Identity Services Engine (ISE)</li>
+                <li>Network Access Control (NAC)</li>
+                <li>Security Policies & Threat Mitigation</li>
+                <li>Windows Server & Active Directory</li>
+                <li>Wireshark & Packet Analysis</li>
+                <li>Subnetting, VLANs & Routing Protocols</li>
+                <li>Ethical Hacking Basics</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <p>Email: <a href="mailto:amierattiamohamed@gmail.com">amierattiamohamed@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-attia-15612424b" target="_blank">linkedin.com/in/mohammed-attia-15612424b</a></p>
+            <p>Phone: <strong>+20 109 940 4716</strong></p>
+        </section>
+
+    </div>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Amier Network Security. All rights reserved.</p>
-        </div>
+        © 2025 Amier – Network Security Professional | CCNP Security (SCOR 350-701)
     </footer>
 
 </body>
